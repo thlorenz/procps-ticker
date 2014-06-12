@@ -8,6 +8,8 @@ function inspect(obj, depth) {
   console.error(require('util').inspect(obj, false, depth || 5, true));
 }
 
+// vminfo uses basic readable, so all functions wrapped
+// with basic readable don't have to be tested separately
 test('\nvminfo', function (t) {
   var data = [], ended;
   var stream = vminfo ( { interval: 50 })
