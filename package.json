@@ -23,7 +23,9 @@
     "nave": "~0.4.3",
     "tap": "~0.4.3"
   },
-  "keywords": [],
+  "keywords": [ "proc", 
+"procps", "stream", "tick", "system"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
