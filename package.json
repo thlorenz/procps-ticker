@@ -1,6 +1,6 @@
 {
   "name": "procps-ticker",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Ticks `proc` info of the host machine at given intervals and exposes it via a stream interface.",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,12 @@
     "nave": "~0.4.3",
     "tap": "~0.4.3"
   },
-  "keywords": [ "proc", 
-"procps", "stream", "tick", "system"
+  "keywords": [
+    "proc",
+    "procps",
+    "stream",
+    "tick",
+    "system"
   ],
   "author": {
     "name": "Thorsten Lorenz",
