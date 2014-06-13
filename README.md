@@ -1,4 +1,4 @@
-# procps-ticker [![build status](https://secure.travis-ci.org/thlorenz/procps-ticker.png)](http://travis-ci.org/thlorenz/procps-ticker)
+# procps-ticker [![build status](https://secure.travis-ci.org/thlorenz/procps-ticker.png?branch=master)](http://travis-ci.org/thlorenz/procps-ticker)
 
 Ticks `proc` info of the host machine at given intervals and exposes it via a stream interface.
 
