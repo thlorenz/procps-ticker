@@ -7,7 +7,7 @@ function pad(s) {
 }
 
 function end(stream) {
-  stream.endSoon();
+  stream.end();
   console.error('\nending');
 }
 

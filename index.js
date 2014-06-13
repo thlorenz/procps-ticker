@@ -23,7 +23,7 @@ var sysinfo = exports.sysinfo = {};
  * [meminfo](https://github.com/thlorenz/procps#sysinfomeminfounit--object)
  * at the given interval.
  * 
- * @name meminfo
+ * @name sysinfo::meminfo
  * @param {Object}  opts          options
  * @param {number=} opts.interval interval in milliseconds at which to emit data (default: 1000ms)
  * @param {number=} opts.unit     `'b'|'k'|'m'|'g'` to return usage in Bytes|KB|MB|GB respectively
@@ -37,7 +37,7 @@ sysinfo.meminfo      = require('./lib/meminfo-readable');
  * [vminfo](https://github.com/thlorenz/procps#vminfo--object)
  * at the given interval.
  * 
- * @name vminfo
+ * @name sysinfo::vminfo
  * @param {Object}  opts          options
  * @param {number=} opts.interval interval in milliseconds at which to emit data (default: 1000ms)
  * @function
@@ -45,13 +45,12 @@ sysinfo.meminfo      = require('./lib/meminfo-readable');
  */
 sysinfo.vminfo       = require('./lib/basic-readable')(procps.sysinfo.vminfo);
 
-
 /**
  * Creates a stream that will emit
  * [stats](https://github.com/thlorenz/procps#sysinfogetstat--object) 
  * at the given interval.
  * 
- * @name getstat
+ * @name sysinfo::getstat
  * @param {Object}  opts          options
  * @param {number=} opts.interval interval in milliseconds at which to emit data (default: 1000ms)
  * @function
@@ -64,7 +63,7 @@ sysinfo.getstat      = require('./lib/basic-readable')(procps.sysinfo.getstat);
  * [disk stats](https://github.com/thlorenz/procps#sysinfogetdiskstat--object) 
  * at the given interval.
  * 
- * @name getdiskstat
+ * @name sysinfo::getdiskstat
  * @param {Object}  opts          options
  * @param {number=} opts.interval interval in milliseconds at which to emit data (default: 1000ms)
  * @function
@@ -78,7 +77,7 @@ sysinfo.getdiskstat  = require('./lib/basic-readable')(procps.sysinfo.getdisksta
  * [uptime info](https://github.com/thlorenz/procps#sysinfouptime--object)
  * at the given interval.
  * 
- * @name uptime
+ * @name sysinfo::uptime
  * @param {Object}  opts          options
  * @param {number=} opts.interval interval in milliseconds at which to emit data (default: 1000ms)
  * @function
@@ -91,7 +90,7 @@ sysinfo.uptime       = require('./lib/basic-readable')(procps.sysinfo.uptime);
  * [uptime since info](https://github.com/thlorenz/procps#sysinfouptimesince--object)
  * at the given interval.
  * 
- * @name uptimeSince
+ * @name sysinfo::uptimeSince
  * @param {Object}  opts          options
  * @param {number=} opts.interval interval in milliseconds at which to emit data (default: 1000ms)
  * @function
@@ -104,7 +103,7 @@ sysinfo.uptimeSince  = require('./lib/basic-readable')(procps.sysinfo.uptimeSinc
  * [loadavg info](https://github.com/thlorenz/procps#sysinfoloadavg--arraynumber)
  * at the given interval.
  * 
- * @name loadavg
+ * @name sysinfo::loadavg
  * @param {Object}  opts          options
  * @param {number=} opts.interval interval in milliseconds at which to emit data (default: 1000ms)
  * @function

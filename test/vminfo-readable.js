@@ -20,5 +20,5 @@ test('\nvminfo', function (t) {
       t.end()
     })
 
-  setTimeout(stream.endSoon.bind(stream), 140);
+  setTimeout(stream.end.bind(stream), 140);
 })
